@@ -4,5 +4,21 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\netcoreapp3.1\ThreeAPIDemo.xml</DocumentationFile>
+      <OutputPath>bin\Debug\</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="5.2.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Private.CoreLib" />
+    </ItemGroup>
+
 
 </Project>
