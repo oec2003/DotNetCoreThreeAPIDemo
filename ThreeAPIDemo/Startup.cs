@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Text;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,7 +26,7 @@ namespace ThreeAPIDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
+            
             services.AddScoped<IUserService,UserService>();
             
             services.AddSwaggerGen(options =>
@@ -56,7 +57,7 @@ namespace ThreeAPIDemo
                             Instance = context.HttpContext.Request.Path,
                         };
                         details.Extensions.Add("trachid",context.HttpContext.TraceIdentifier);
-
+            
                         return new UnprocessableEntityObjectResult(details)
                         {
                             ContentTypes = { "application/problem+json" }
@@ -71,13 +72,13 @@ namespace ThreeAPIDemo
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            
             app.UseHttpsRedirection();
-
+            
             app.UseRouting();
-
+            
             app.UseAuthorization();
-
+            
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {

@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
@@ -55,6 +57,7 @@ namespace ThreeAPIDemo.Controllers
             return Ok(base.Mapper.Map<UserDto>(user));
         }
         
+        /*
         [HttpGet]
         public ActionResult GetUsers([FromBody]string fields)
         {
@@ -66,6 +69,19 @@ namespace ThreeAPIDemo.Controllers
             };
             var returnResult = base.Mapper.Map<List<UserDto>>(userList);
             return Ok(returnResult.GetData(fields));
+        }*/
+
+        [HttpGet]
+        public string Test()
+        {
+            Dictionary<string, object> dicData = new Dictionary<string, object>();
+            Dictionary<string,object> dicKeyValue=new Dictionary<string, object>();
+
+            dicKeyValue.Add("f_xxxx", "11111");
+            dicData.Add("instanceData", dicKeyValue);
+
+            return Newtonsoft.Json.JsonConvert.SerializeObject(dicData);
+
         }
     }
 }
