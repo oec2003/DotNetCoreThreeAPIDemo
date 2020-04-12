@@ -6,10 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.PlatformAbstractions;
+using ThreeAPIDemo.Extensions;
+using ThreeAPIDemo.Middlewares;
 using ThreeAPIDemo.Services;
 
 namespace ThreeAPIDemo
@@ -28,7 +31,7 @@ namespace ThreeAPIDemo
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             
             services.AddScoped<IUserService,UserService>();
-            
+            services.AddSingleton(new RequestSourceCheckMiddleware());
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo 
@@ -74,8 +77,11 @@ namespace ThreeAPIDemo
             }
             
             app.UseHttpsRedirection();
-            
+        
             app.UseRouting();
+            
+            app.UseRequestSourceCheckNew();
+            app.UseRequestSourceCheck();
             
             app.UseAuthorization();
             
@@ -84,7 +90,12 @@ namespace ThreeAPIDemo
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "DotNet Core WebAPI文档");
             });
+            
+    
+            
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            
+           
         }
     }
 }

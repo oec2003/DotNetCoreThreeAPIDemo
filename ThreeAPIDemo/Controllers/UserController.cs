@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -6,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
 using ThreeAPIDemo.Dtos;
 using ThreeAPIDemo.Extensions;
+using ThreeAPIDemo.Filters;
 using ThreeAPIDemo.ModelBInders;
 using ThreeAPIDemo.Models;
 using ThreeAPIDemo.Services;
@@ -19,10 +21,12 @@ namespace ThreeAPIDemo.Controllers
         {
         }
 
+        [CustomException]
         [HttpGet]
 
         public ActionResult<string> GetUserName(string userId, [FromServices]IUserService userService)
         {
+            //throw new Exception("this is my exception");
             return Ok($"{userService.GetUserName(userId)}");
         }
         
