@@ -6,5 +6,15 @@ namespace ThreeAPIDemo.Services
         {
             return $"UserName:{userId}";
         }
+
+        public bool ValidatePassword(string userName, string password)
+        {
+            if (userName == "oec2003" && password == "000000")
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }

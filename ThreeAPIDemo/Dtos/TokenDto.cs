@@ -2,13 +2,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ThreeAPIDemo.Dtos
 {
-    public class UserDto
+    public class TokenDto
     {
         [Required]
-        public string  Name { get; set; }
-
+        public string UserName { get; set; }
         [Required]
-        public string  Email { get; set; }
-        
+        public string  Password { get; set; }
     }
 }
