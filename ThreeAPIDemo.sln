@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareDemo", "Middlewar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareDemo1", "MiddlewareDemo1\MiddlewareDemo1.csproj", "{3959D4FD-8996-4C04-BDCD-0E983E0C2D3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectDemo", "InjectDemo\InjectDemo.csproj", "{FFA308AA-B31C-42CD-9E89-58E5CEBE2315}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{3959D4FD-8996-4C04-BDCD-0E983E0C2D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3959D4FD-8996-4C04-BDCD-0E983E0C2D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3959D4FD-8996-4C04-BDCD-0E983E0C2D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA308AA-B31C-42CD-9E89-58E5CEBE2315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA308AA-B31C-42CD-9E89-58E5CEBE2315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA308AA-B31C-42CD-9E89-58E5CEBE2315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA308AA-B31C-42CD-9E89-58E5CEBE2315}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
