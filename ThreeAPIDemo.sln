@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeAPIDemo", "ThreeAPIDemo\ThreeAPIDemo.csproj", "{6F6A8820-485D-4B80-8401-6F6EEB6656E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareDemo", "MiddlewareDemo\MiddlewareDemo.csproj", "{0F23F7FE-85CE-4C31-A17E-3B4F550C02AA}"
@@ -7,6 +8,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareDemo1", "MiddlewareDemo1\MiddlewareDemo1.csproj", "{3959D4FD-8996-4C04-BDCD-0E983E0C2D3E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectDemo", "InjectDemo\InjectDemo.csproj", "{FFA308AA-B31C-42CD-9E89-58E5CEBE2315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacNetCore3.1Demo", "AutofacNetCore3.1Demo\AutofacNetCore3.1Demo.csproj", "{11336267-2234-495E-9908-C64EE2ED2E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacNetCore2.1Demo", "AutofacNetCore2.1Demo\AutofacNetCore2.1Demo.csproj", "{6AA310F5-E49A-4269-A526-C29CB2C90A52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +35,13 @@ Global
 		{FFA308AA-B31C-42CD-9E89-58E5CEBE2315}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFA308AA-B31C-42CD-9E89-58E5CEBE2315}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFA308AA-B31C-42CD-9E89-58E5CEBE2315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11336267-2234-495E-9908-C64EE2ED2E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11336267-2234-495E-9908-C64EE2ED2E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11336267-2234-495E-9908-C64EE2ED2E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11336267-2234-495E-9908-C64EE2ED2E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AA310F5-E49A-4269-A526-C29CB2C90A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA310F5-E49A-4269-A526-C29CB2C90A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA310F5-E49A-4269-A526-C29CB2C90A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA310F5-E49A-4269-A526-C29CB2C90A52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

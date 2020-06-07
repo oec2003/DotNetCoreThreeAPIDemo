@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+ 
+  "profiles": {
+  
+    "AutofacNetCore2._1Demo": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/user/getusername",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000"
+    }
+  }
+}
