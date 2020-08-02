@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{6F6A8820-485D-4B80-8401-6F6EEB6656E1}|Default">
+  <MonoDevelop.Ide.ItemProperties.ThreeAPIDemo PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AutofacNetCore2.1Demo/Startup.cs">
+    <Files>
+      <File FileName="AutofacNetCore2.1Demo/Startup.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ThreeAPIDemo" expanded="True">
+            <Node name="AutofacNetCore2.1Demo" expanded="True">
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.AutofacNetCore2.1Demo FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
